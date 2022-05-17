@@ -15,7 +15,59 @@ Asamoah Anthony - Ghana
 
 <body>
 
-  
+  <div class="main">
+    <div class="register">
+      <div class="header">
+        Register
+      </div>
+      <div class="form">
+        <form>
+          <div class="f_name">
+            <label for="f_name">First Name</label>
+          <input type="text" id="f_name" required>
+          </div>
+          <div class="l_name">
+            <label for="l_name">Last Name</label>
+            <input type="text" id="l_name" required>
+          </div>
+          <div class="phone">
+            <label for="phone">Phone Number</label>
+            <input type="text" required>
+          </div>
+          <div class="gender">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="country">
+            <label for="country">Country</label>
+            <input type="text" required>
+          </div>
+          <div class="state">
+            <label for="state">State/Province</label>
+            <input type="text" required>
+          </div>
+          <div class="username">
+            <label for="username">Username</label>
+            <input type="text" required>
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input type="password" minlength="8" placeholder="Must be 8 or more characters." required>
+          </div>
+          <div class="confirm">
+            <label for="confirm">Confirm Password</label>
+            <input type="password" id="confirm" minlength="8" required>
+          </div>
+          <div class="submit">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   
   <script src="script.js"></script>
 </body>
