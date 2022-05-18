@@ -6,7 +6,7 @@
   left:0;
   width: 100vw;
   height: 5vh;
-  background-color: #5b5b5b;
+  background-color: #102854;
   text-align: center;
 }
 .topnav nav {
@@ -23,7 +23,7 @@
 }
 .topnav a:hover {
   font-weight: bolder;
-  color:black;
+  color:#102854;
   background-color: white;
   border-radius: 5px;
 }
