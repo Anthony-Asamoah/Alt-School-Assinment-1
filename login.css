@@ -1,0 +1,74 @@
+.main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(110deg, #102854, #00695f);
+    padding:10px;
+    color:white;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px solid white;
+}
+.image {
+    text-align: center;
+}
+.image img {
+    height: 30vh;
+    object-position: center;
+    object-fit: cover;
+    padding: 50px;
+    border-radius: 100%;
+}
+
+.form {
+    text-align: center;
+    padding: 20px;
+}
+
+.username, .password {
+    padding:5px;
+}
+
+input {
+    height: 4vh;
+    min-width: 20vw;
+    font-size: 1.3em;
+    transition: 0.5s ease;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+}
+input:hover, input:focus {
+    background-color: antiquewhite;
+    border: 2px solid #00695f;
+}
+
+input::placeholder {
+    font-family: monospace;
+    font-size: 1.35em;
+}
+
+.submit button {
+    border-radius: 5px;
+    border: none;
+    background-color: whitesmoke;
+    color: #102854;
+    height:4vh;
+    width: 10vw;
+    margin-top: 1vh;
+    padding:5px;
+    font-size: 1.35em;
+    transition: 0.3s ease;
+}
+.submit button:hover {
+    background-color: #102854;
+    color: white;
+}
