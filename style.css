@@ -1,3 +1,7 @@
+/*
+Global Styles
+*/
+
 
 /* TopNav */
 .topnav {
@@ -32,3 +36,221 @@
   margin-top:5vh;
   font-family: sans-serif;
 }
+
+
+/*
+Specific styling
+*/
+
+/* About Me page*/
+
+/* Navigation */
+.navbar {
+  position: absolute;
+  top:5vh;
+  left:0;
+  width: 100vw;
+  height: 3vh;
+  background-color: #00695f;
+  text-align: center;
+}
+
+.navbar .links {
+    margin-top: 0.6vh;
+}
+.navbar a:link, a:visited {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 6px 20px;
+  transition: 0.3s ease;
+}
+.navbar a:hover {
+  font-weight: bolder;
+  color:white;
+  background-color: #003631;
+  border-radius: 5px;
+}
+
+.main > div {
+    padding:20px;
+}
+
+/* Header */
+
+
+/* End of About Me Page*/
+
+
+/* Login Page */
+
+#login .main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(110deg, #102854, #00695f);
+    padding:10px;
+    color:white;
+}
+
+#login .header {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px solid white;
+}
+#login .image {
+    text-align: center;
+}
+#login .image img {
+    height: 30vh;
+    object-position: center;
+    object-fit: cover;
+    padding: 50px;
+    border-radius: 100%;
+}
+
+#login .form {
+    text-align: center;
+    padding: 20px;
+}
+
+#login form > div{
+    padding:5px;
+}
+
+#login input {
+    height: 4vh;
+    min-width: 20vw;
+    font-size: 1.3em;
+    transition: 0.5s ease;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+}
+#login input:hover, #login input:focus {
+    background-color: antiquewhite;
+    border: 2px solid #00695f;
+}
+
+#login input::placeholder {
+    font-family: monospace;
+    font-size: 1.35em;
+}
+
+#login .submit button {
+    border-radius: 5px;
+    border: none;
+    background-color: whitesmoke;
+    color: #102854;
+    height:4vh;
+    width: 10vw;
+    margin-top: 1vh;
+    padding:5px;
+    font-size: 1.35em;
+    transition: 0.3s ease;
+}
+#login .submit button:hover {
+    background-color: #102854;
+    color: white;
+}
+
+/* End of Login page */
+
+
+/* Register Page */
+#register .main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top:20vh;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(110deg, #102854, #00695f);
+    padding:10px;
+    color:white;
+    min-width: 30vw;
+}
+
+#register .header {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px solid white;
+}
+
+#register .form {
+    padding:20px;
+    text-align: right;
+}
+
+#register form > div {
+    padding: 15px;
+}
+#register form label {
+    font-size:1.2em;
+    margin: 20px;
+}
+#register form input, select {
+    height: 4vh;
+    min-height: 35px;
+    width: 20vw;
+    min-width: 300px;
+    font-size: 1.3em;
+    transition: 0.5s ease;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 0 10px;
+}
+#register input::placeholder {
+    font-family: monospace;
+    font-size: 1em;
+}
+#register input:hover, #register input:focus, #register select:hover, #register select:focus {
+    background-color: antiquewhite;
+    border: 2px solid #00695f;
+}
+
+#register .submit {
+    text-align: center;
+}
+#register .submit button {
+    border-radius: 5px;
+    border: none;
+    background-color: whitesmoke;
+    color: #00695f;
+    height:4vh;
+    min-height: 35px;
+    width: 10vw;
+    min-width: 150px;
+    margin-top: 1vh;
+    padding:5px;
+    font-size: 1.35em;
+    transition: 0.3s ease;
+}
+#register .submit button:hover {
+    background-color: #102854;
+    color: white;
+}
+
+#register .gender select {
+    width: 21.3vw;
+}
+
+@media screen and (max-width: 480px) {
+    #register .form {
+        text-align: center;
+    }
+    #register .form input, select {
+        text-align: center;
+    }
+}
+
+/* End of Register Page */
+
