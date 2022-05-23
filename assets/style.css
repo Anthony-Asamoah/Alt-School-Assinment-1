@@ -132,6 +132,7 @@ Specific styling
     height: 32px;
     background-color: #00695f;
     text-align: center;
+    transition: height 0.5s ease;
 }
 
 #About .navbar .links {
@@ -150,6 +151,16 @@ Specific styling
     color:white;
     background-color: #003631;
     border-radius: 5px;
+}
+
+#About .navbar .icon {
+    font-size:15px;
+    display: none;
+}
+
+#About .navbar a:hover {
+  background-color: #555;
+  color: white;
 }
 
 /* Header */
@@ -426,10 +437,6 @@ Specific styling
     #About .navbar a:link, a:visited {
         padding: 6px 5px;
     }
-    #About .navbar {
-        height: 50px;
-    }
-
     #About .header {
         height: fit-content;
         padding: 30px 0;
@@ -457,17 +464,52 @@ Specific styling
     .form {
         text-align: center;
     }
+
     .form input, select {
         text-align: center;
     }
 
     .topnav a:link, a:visited {
-        padding: 5px;
+        padding: 2px;
         font-size: 1.25em;
     }
-    #About .navbar {
-        height: 50px;
+
+    /*dropdown*/
+    #About .navbar a{
+        display: none;
     }
+
+    #About .navbar a.icon {
+        float: right;
+        padding: 0 20px;
+        display: block;
+    }
+
+    #About .navbar.responsive {
+        position: absolute;
+        height: 300px;
+    }
+
+    #About .navbar.responsive .icon {
+        position: absolute;
+        right: 25px;
+        background-color: #102854;
+        color:white;
+        border-radius: 5px;
+    }
+
+    #About .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+        padding: 10px 25px;
+        transition: 0.3s ease;
+    }
+    #About .navbar .responsive a:hover {
+        background-color: whitesmoke;
+        color: #102854;
+    }
+    /*End of dropdown*/
 
     #About .main {
         margin: 0;
@@ -477,15 +519,19 @@ Specific styling
         padding-top: 3vh;
         flex-direction: column;
     }
-    #About .header .name h1{
+
+    #About .header .name h1 {
         font-size: 2.5em;
     }
+
     #About .header .name h1:hover {
         font-size: 3em;
     }
+
     #About .header .display_pic {
         display: none;
     }
+
     #About .header .display_pic img:hover {
         width: 150px;
     }
@@ -497,9 +543,11 @@ Specific styling
     #Contact .contact h2 {
         font-size: 2em;
     }
+
     #Contact hr {
         width: 50%;
     }
+
     #Contact .contact p {
         font-size: 1.3em;
     }
