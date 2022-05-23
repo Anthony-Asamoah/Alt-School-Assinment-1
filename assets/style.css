@@ -154,7 +154,7 @@ Specific styling
 /* Header */
 #About .header {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 50px;
     align-items: center;
     justify-content: center;
@@ -336,10 +336,30 @@ Specific styling
 
 
 /* Responsivity */
-
 @media screen and (max-width:810px ) {
     #About .navbar a:link, a:visited {
         padding: 6px 5px;
+    }
+    #About .navbar {
+        height: 50px;
+    }
+
+    #About .header {
+        height: fit-content;
+        padding: 30px 0;
+    }
+     #About .header .name h1{
+        font-size: 2.5em;
+    }
+    #About .header .name h1:hover {
+        font-size: 3em;
+    }
+    #About .header .display_pic img {
+        width: 200px;
+        height: 150px;
+    }
+    #About .header .display_pic img:hover {
+        height: 300px;
     }
 }
 
@@ -361,10 +381,11 @@ Specific styling
     #About .main {
         margin: 0;
     }
-    #About .header {
-        height: fit-content;
-    }
 
+    #About .header {
+        padding-top: 3vh;
+        flex-direction: column;
+    }
     #About .header .name h1{
         font-size: 2.5em;
     }
