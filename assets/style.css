@@ -537,7 +537,7 @@ Specific styling
     }
 
     #Contact form {
-        padding: 10px;
+        padding: 10px !important;
     }
 
     #Contact .contact h2 {
