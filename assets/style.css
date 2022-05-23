@@ -95,8 +95,9 @@ html {
     color: white;
 }
 
-
 /* End of Global Styles */
+
+
 
 /*
 Specific styling
@@ -223,13 +224,8 @@ Specific styling
 
 
 /* Contact Page */
-#Contact form {
-    padding: 0 20%;
-    text-align: right;
-}
 #Contact .contact {
-    margin-top: 100px;
-    background-color: whitesmoke;
+    background-color: white;
     left:0;
     position: absolute;
     width: 100%;
@@ -241,18 +237,39 @@ Specific styling
     font-size: 3em;
     font-weight: bold;
 }
+#Contact hr {
+    width: 50%;
+}
 #Contact .contact p {
     color: #102854;
-    font-family: sans-serif;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+#Contact form {
+    padding: 0 20%;
+    text-align: center;
+    background-color: whitesmoke;
 }
 #Contact .contact form div > input, textarea, select {
     background-color: white !important;
+    font-family: sans-serif;
 }
 #Contact .contact form div > label {
     font-family: sans-serif;
 }
 #Contact .contact form textarea {
     height: 200px;
+}
+#Contact form button {
+    background-color: #00695f;
+    color: white;
+    transition: 0.5s ease;
+    border: 2px solid whitesmoke;
+}
+#Contact form button:hover {
+    background-color: #102854;
+    color: white;
+    border: 2px solid #00695f;
 }
 
 /* End of Contact Page */
@@ -333,6 +350,7 @@ Specific styling
     width: 21.3vw;
 }
 
+/* End of Register Page */
 
 
 /* Responsivity */
@@ -399,6 +417,3 @@ Specific styling
         width: 150px;
     }
 }
-
-/* End of Register Page */
-
