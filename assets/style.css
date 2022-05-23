@@ -463,6 +463,7 @@ Specific styling
 
     .topnav a:link, a:visited {
         padding: 5px;
+        font-size: 1.25em;
     }
     #About .navbar {
         height: 50px;
