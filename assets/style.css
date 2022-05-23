@@ -1,20 +1,24 @@
 /*
 Global Styles
+
+TopNav
 */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
-
-/* TopNav */
 .topnav {
   position: absolute;
   top:0;
   left:0;
   width: 100vw;
-  height: 5vh;
+  height: 50px;
   background-color: #102854;
   text-align: center;
 }
 .topnav nav {
-  margin-top: 1.1vh;
+  margin-top: 10px;
 }
 .topnav a:link, a:visited {
   text-decoration: none;
@@ -37,28 +41,102 @@ Global Styles
   font-family: sans-serif;
 }
 
+/* Forms */
+ .form {
+    padding:20px;
+    text-align: right;
+}
+
+ form > div {
+    padding: 15px;
+}
+ form label {
+    font-size:1.2em;
+    margin: 20px;
+}
+ form input, select, textarea {
+    height: 4vh;
+    min-height: 35px;
+    width: 20vw;
+    min-width: 300px;
+    font-size: 1.3em;
+    transition: 0.5s ease;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: #102854;
+}
+ input::placeholder {
+    font-family: monospace;
+    font-size: 1em;
+}
+ input:hover, input:focus, select:hover, select:focus, textarea:hover, textarea:focus {
+    background-color: antiquewhite;
+    border: 2px solid #00695f;
+}
+
+.submit button {
+    border-radius: 5px;
+    border: none;
+    background-color: whitesmoke;
+    color: #102854;
+    height:4vh;
+    min-height: 40px;
+    width: 10vw;
+    min-width: 150px;
+    margin-top: 1vh;
+    padding:5px;
+    font-size: 1.35em;
+    transition: 0.3s ease;
+}
+.submit button:hover {
+    background-color: #102854;
+    color: white;
+}
+
+
+/* End of Global Styles */
 
 /*
 Specific styling
 */
 
 /* About Me page*/
+#About .main {
+    margin: 0 20%;
+}
+#About .main p, ul, li, .edu div {
+    color: #102854;
+    font-family: "Garrison Light Sans";
+}
+#About .main h2 {
+    color: #00695f;
+}
 
+#About .main > div {
+    padding:20px;
+    transition: 0.5s ease;
+}
+#About .main > div:hover {
+    background-color: #d9d9d9;
+    padding: 25px;
+}
 /* Navigation */
-.navbar {
+#About .navbar {
   position: absolute;
-  top:5vh;
+  top:50px;
   left:0;
   width: 100vw;
-  height: 3vh;
+  height: 32px;
   background-color: #00695f;
   text-align: center;
 }
 
-.navbar .links {
-    margin-top: 0.6vh;
+#About .navbar .links {
+    margin-top: 6px;
 }
-.navbar a:link, a:visited {
+#About .navbar a:link, a:visited {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -66,22 +144,118 @@ Specific styling
   padding: 6px 20px;
   transition: 0.3s ease;
 }
-.navbar a:hover {
+#About .navbar a:hover {
   font-weight: bolder;
   color:white;
   background-color: #003631;
   border-radius: 5px;
 }
 
-.main > div {
-    padding:20px;
+/* Header */
+#About .header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin-top:10vh;
 }
 
-/* Header */
+#About .header .name h1{
+    color: #102854;
+    font-weight: bolder;
+    font-size: 4.5em;
+    font-family: monospace;
+    transition: 0.5s ease;
+}
+#About .header .name h1:hover {
+    font-size: 5em;
+}
+#About .header .display_pic img {
+    object-fit: cover;
+    object-position: 50% 30%;
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+#About .header .display_pic img:hover {
+    width: 250px;
+}
+
+#About .about {
+    background-color: whitesmoke;
+}
+
+#About .edu > div {
+    padding: 20px;
+}
+
+#About .edu {
+    background-color: whitesmoke;
+}
+
+
+#About .hobby_and_skill {
+    background-color: whitesmoke;
+}
+#About .hobby_and_skill .hobbies ul {
+    list-style-position: outside;
+}
+
+#About ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+#About li {
+    padding: 10px;
+}
+
+#About .list_title {
+    font-size: 1.2em;
+    color: #003631;
+    border-bottom: 1px solid #102854;
+}
 
 
 /* End of About Me Page*/
 
+
+/* Contact Page */
+#Contact form {
+    padding: 0 20%;
+    text-align: right;
+}
+#Contact .contact {
+    margin-top: 100px;
+    background-color: whitesmoke;
+    left:0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+#Contact .contact h2 {
+    color: #00695f;
+    font-family: sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+#Contact .contact p {
+    color: #102854;
+    font-family: sans-serif;
+}
+#Contact .contact form div > input, textarea, select {
+    background-color: white !important;
+}
+#Contact .contact form div > label {
+    font-family: sans-serif;
+}
+#Contact .contact form textarea {
+    height: 200px;
+}
+
+/* End of Contact Page */
 
 /* Login Page */
 
@@ -117,48 +291,15 @@ Specific styling
     text-align: center;
     padding: 20px;
 }
-
 #login form > div{
     padding:5px;
 }
-
 #login input {
-    height: 4vh;
-    min-width: 20vw;
-    font-size: 1.3em;
-    transition: 0.5s ease;
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    padding: 0 10px;
     text-align: center;
 }
-#login input:hover, #login input:focus {
-    background-color: antiquewhite;
-    border: 2px solid #00695f;
-}
-
 #login input::placeholder {
     font-family: monospace;
     font-size: 1.35em;
-}
-
-#login .submit button {
-    border-radius: 5px;
-    border: none;
-    background-color: whitesmoke;
-    color: #102854;
-    height:4vh;
-    width: 10vw;
-    min-width: 150px;
-    margin-top: 1vh;
-    padding:5px;
-    font-size: 1.35em;
-    transition: 0.3s ease;
-}
-#login .submit button:hover {
-    background-color: #102854;
-    color: white;
 }
 
 /* End of Login page */
@@ -185,71 +326,56 @@ Specific styling
     border-bottom: 1px solid white;
 }
 
-#register .form {
-    padding:20px;
-    text-align: right;
-}
-
-#register form > div {
-    padding: 15px;
-}
-#register form label {
-    font-size:1.2em;
-    margin: 20px;
-}
-#register form input, select {
-    height: 4vh;
-    min-height: 35px;
-    width: 20vw;
-    min-width: 300px;
-    font-size: 1.3em;
-    transition: 0.5s ease;
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    padding: 0 10px;
-}
-#register input::placeholder {
-    font-family: monospace;
-    font-size: 1em;
-}
-#register input:hover, #register input:focus, #register select:hover, #register select:focus {
-    background-color: antiquewhite;
-    border: 2px solid #00695f;
-}
-
 #register .submit {
     text-align: center;
 }
-#register .submit button {
-    border-radius: 5px;
-    border: none;
-    background-color: whitesmoke;
-    color: #00695f;
-    height:4vh;
-    min-height: 35px;
-    width: 10vw;
-    min-width: 150px;
-    margin-top: 1vh;
-    padding:5px;
-    font-size: 1.35em;
-    transition: 0.3s ease;
-}
-#register .submit button:hover {
-    background-color: #102854;
-    color: white;
-}
-
 #register .gender select {
     width: 21.3vw;
 }
 
+
+
+/* Responsivity */
+
+@media screen and (max-width:810px ) {
+    #About .navbar a:link, a:visited {
+        padding: 6px 5px;
+    }
+}
+
 @media screen and (max-width: 480px) {
-    #register .form {
+    .form {
         text-align: center;
     }
-    #register .form input, select {
+    .form input, select {
         text-align: center;
+    }
+
+    .topnav a:link, a:visited {
+        padding: 5px;
+    }
+    #About .navbar {
+        height: 50px;
+    }
+
+    #About .main {
+        margin: 0;
+    }
+    #About .header {
+        height: fit-content;
+    }
+
+    #About .header .name h1{
+        font-size: 2.5em;
+    }
+    #About .header .name h1:hover {
+        font-size: 3em;
+    }
+    #About .header .display_pic {
+        display: none;
+    }
+    #About .header .display_pic img:hover {
+        width: 150px;
     }
 }
 

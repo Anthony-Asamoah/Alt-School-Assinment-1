@@ -13,7 +13,7 @@ Asamoah Anthony - Ghana
   <link href="assets/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body id="about">
+<body id="About">
 
   <!--  Navbar  -->
   <div class="nav">
@@ -25,7 +25,7 @@ Asamoah Anthony - Ghana
         <a href="register.html">Register</a>
       </nav>
     </div>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
       <div class="links">
         <a href="index.html#name">Name</a>
         <a href="index.html#about">About</a>
@@ -56,14 +56,14 @@ Asamoah Anthony - Ghana
     <div class="about" id="about">
       <h2>About</h2>
       <p>
-        At the Age of twenty-two (22), a passion for learning and a keen interest in coding,
+        Hailing from Ghana at the age of twenty-two (22), a passion for learning and a keen interest in coding,
         i am very excited to be a part of Alt School Africa.
       </p>
     </div>
 
     <!--   Goal Section   -->
     <div class="goal" id="goal">
-      <h2>Goals</h2>
+      <h2>Goals for the course</h2>
       <p>It is my hope to get to know all there is about cloud engineering by the end of the course.</p>
     </div>
 
@@ -91,9 +91,9 @@ Asamoah Anthony - Ghana
     <!--   Job Experience  Section   -->
     <div class="job" id="job">
       <h2>Job Experience</h2>
-      <p>Currently working as a National Service Personel at the Advanced Information Technology Institue or commonly
+      <p>Currently, i work as a National Service Personel at the Advanced Information Technology Institue or commonly
       known as the Kofi Annan Center of Excellence (AITI-KACE).<p>
-      <ul>Main Roles include;
+      <ul><span class="list_title">Main Roles include;</span>
         <li>Backend Development with Django - python.</li>
         <li>Frontend Development with HTML CSS and Angular.</li>
       </ul>
@@ -110,44 +110,48 @@ Asamoah Anthony - Ghana
         </ul>
       </div>
       <div class="skill">
-        <ul>Some other skills of mine are;
+        <ul><span class="list_title">Some other skills of mine are;</span>
           <li>Basic Graphic Design with Illustrator and Photoshop</li>
           <li>Music Production with Fruity Loops</li>
         </ul>
       </div>
     </div>
-
-    <!--   Contact Form Section   -->
-    <div class="contact" id="contact">
-      <h2>Reach Out</h2>
-      <form>
-        <div class="name">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="email">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="message">
-          <label for="message">Message</label>
-          <input type="text" id="message" name="message" required>
-        </div>
-        <div class="priority">
-          <label for="priority">Priority</label>
-          <select name="priority" id="priority">
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-          </select>
-        </div>
-        <div class="submit">
-          <button id="submit" type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
   </div>
-  
+
+  <!--   Contact Form Section   -->
+  <div class="contact" id="contact">
+    <h2>Reach Out</h2> <hr />
+    <p>Send in a message, inquiry or comment. A reply can be expected within a couple of days.</p>
+    <form>
+      <div class="name">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="email">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="message">
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="priority">
+        <label for="priority">Priority</label><br>
+        <select name="priority" id="priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div class="submit">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+<div class="footer">
+
+  </div>
   <script src="assets/script.js"></script>
 </body>
 
