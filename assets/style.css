@@ -236,23 +236,27 @@ Specific styling
     font-family: sans-serif;
     font-size: 3em;
     font-weight: bold;
+    padding:20px
 }
 #Contact hr {
     width: 50%;
+    min-width: 200px;
 }
 #Contact .contact p {
+    padding:20px;
     color: #102854;
     font-family: monospace;
     font-size: 1.2em;
 }
 #Contact form {
-    padding: 0 20%;
-    text-align: center;
+    padding: 0 25%;
+    text-align: left;
     background-color: whitesmoke;
 }
 #Contact .contact form div > input, textarea, select {
     background-color: white !important;
     font-family: sans-serif;
+    width: 100%;
 }
 #Contact .contact form div > label {
     font-family: sans-serif;
@@ -379,6 +383,10 @@ Specific styling
     #About .header .display_pic img:hover {
         height: 300px;
     }
+
+    #Contact form {
+        padding: 10%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -415,5 +423,19 @@ Specific styling
     }
     #About .header .display_pic img:hover {
         width: 150px;
+    }
+
+    #Contact form {
+        padding: 10px;
+    }
+
+    #Contact .contact h2 {
+        font-size: 2em;
+    }
+    #Contact hr {
+        width: 50%;
+    }
+    #Contact .contact p {
+        font-size: 1.3em;
     }
 }
