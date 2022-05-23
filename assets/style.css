@@ -357,6 +357,13 @@ Specific styling
 /* End of Register Page */
 
 
+/* Calculator Page */
+
+
+
+/* End of Calculator Page */
+
+
 /* Responsivity */
 @media screen and (max-width:810px ) {
     #About .navbar a:link, a:visited {
