@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body id="Calc">
 
   <!-- Navbar -->
   <div class="topnav">
@@ -17,7 +18,47 @@
   </div>
 
   <div class="main">
-
+    <div class="header">
+      <h1>Calculator UI with HTML table</h1>
+    </div>
+    <div class="calc">
+      <input type="text" class="text">
+      <table>
+        <tr>
+          <td><input type="button" value="&radic;" class="operator"></td>
+          <td><input type="button"  value="("></td>
+          <td><input type="button" value=")"></td>
+          <td><input type="button" value="%"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="7"></td>
+          <td><input type="button" value="8"></td>
+          <td><input type="button" value="9"></td>
+          <td><input type="button" value="/"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4"></td>
+          <td><input type="button" value="5"></td>
+          <td><input type="button" value="6"></td>
+          <td><input type="button" value="X"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1"></td>
+          <td><input type="button" value="2"></td>
+          <td><input type="button" value="3"></td>
+          <td><input type="button" value="-"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="button" value="0" ></td>
+          <td><input type="button" value="."></td>
+          <td rowspan="2"><input type="button" value="+" class=" add"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="clear" class="clear"></td>
+          <td colspan="2"><input type="button" value="=" class="equals"></td>
+        </tr>
+      </table>
+    </div>
   </div>
 
 </body>
