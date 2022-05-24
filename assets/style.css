@@ -369,16 +369,17 @@ Specific styling
 
 
 /* Calculator Page */
-#Calc .main {
+#Calc_table .main, #Calc_flex .main {
     margin-top: 100px;
 }
 
-#Calc .header{
+#Calc_table .header, #Calc_flex .header{
     text-align: center;
     color: #102854;
 }
 
-#Calc .calc{
+/* Table Calculator styling */
+#Calc_table .calc, #Calc_flex .calc{
     margin: auto;
     width: 20vw;
     min-width: 300px;
@@ -386,23 +387,27 @@ Specific styling
     background-color: #00695f;
     border-radius: 5px;
 }
-#Calc .text {
+#Calc_table .output {
     font-size: 24px;
     padding: 16px 5px;
     font-weight: bold;
     text-align: right;
     width: 96%;
+    height: 50px;
     border: none;
     background-color: white;
 }
-#Calc table{
+#Calc_table .output input {
+  width:500px !important;
+}
+#Calc_table table{
     width: 100%;
 }
-#Calc td{
+#Calc_table td{
     width: 25%;
 }
 
- #Calc input{
+#Calc_table input{
     padding: 15px;
     font-weight: bold;
     font-size: 16px;
@@ -413,20 +418,67 @@ Specific styling
     width: 100%;
     transition: 0.5s ease;
 }
- #Calc input:hover{
+#Calc_table input:hover{
     background-color: darkgray;
     outline: none;
- }
-#Calc .add{
+}
+#Calc_table .add{
     height: 105px;
 }
-#Calc .equals{
+#Calc_table .equals, #Calc_flex .equals{
     background-color: green;
     color: white
 }
-#Calc .clear{
+#Calc_table .clear, #Calc_flex .clear{
     background-color: #a60000;
     color: white;
+}
+
+/* Flexbox Calculator styling */
+#Calc_flex .calc {
+    width: 20%;
+}
+#Calc_flex .output input {
+    width: 90% !important;
+    height: 50px;
+    background-color: white;
+}
+#Calc_flex .keys > div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#Calc_flex input {
+    padding: 15px;
+    width: 100%;
+    margin: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #102854;
+    background-color: whitesmoke;
+    transition: 0.5s ease;
+}
+#Calc_flex .bottom {
+    display: flex;
+}
+#Calc_flex .bottom .left {
+    flex-grow: 4;
+    display: flex;
+}
+#Calc_flex .bottom .left > div {
+    margin: 2px;
+    width: 100%;
+}
+#Calc_flex .bottom .right {
+    flex-grow: 1;
+    height:104px;
+    width: 76px;
+    margin: 2px;
+}
+#Calc_flex .bottom .right input {
+    height:100%;
 }
 
 /* End of Calculator Page */
